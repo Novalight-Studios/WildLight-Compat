@@ -1,0 +1,46 @@
+name: "🐛 Bug Report"
+description: Report a problem or unexpected behavior in WildLight
+title: "[Bug]: "
+labels: ["bug"]
+assignees: ["Alfakynz"]
+body:
+    - type: textarea
+      id: description
+      attributes:
+          label: "Describe the bug"
+          description: What happened, and what did you expect to happen?
+          placeholder: "Explain clearly what the bug is."
+      validations:
+          required: true
+
+    - type: textarea
+      id: steps
+      attributes:
+          label: "Steps to reproduce"
+          description: How can we reproduce the issue?
+          placeholder: |
+              1. Go to ...
+              2. Do ...
+              3. See the error
+      validations:
+          required: true
+
+    - type: textarea
+      id: logs
+      attributes:
+          label: "Crash report or logs"
+          description: Paste the relevant part of your `latest.log` or crash report (if applicable).
+          placeholder: "Attach logs here or link to a Pastebin/Gist."
+          render: shell
+
+    - type: checkboxes
+      id: confirmation
+      attributes:
+          label: "Checklist"
+          options:
+              - label: "I'm using the latest version of WildLight Compat."
+                required: true
+              - label: "I've checked existing issues to avoid duplicates."
+                required: true
+              - label: "I've attached logs or crash reports if available."
+                required: false
