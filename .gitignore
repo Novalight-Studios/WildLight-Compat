@@ -1,0 +1,36 @@
+1.21.1
+*.zip
+*.mrpack
+
+# gradle
+.gradle/
+build/
+out/
+classes/
+
+# IDE
+.settings/
+.vscode/
+!vscode/settings.json
+bin/
+.classpath
+.project
+.idea/
+
+# macos
+*.DS_Store
+
+# fabric
+run/
+libs/
+
+# java
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr
+
+# Website
+dist/
+node_modules/
+package-lock.json

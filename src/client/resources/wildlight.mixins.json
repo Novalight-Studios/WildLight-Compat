@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "com.alfakynz.wildlight.mixin",
+  "plugin": "com.alfakynz.wildlight.mixin.WildlightMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BreezeCompatMixin",
+    "DeeperDarkerCompatMixin",
+    "FriendsFoesCompatMixin",
+    "VisualOverhaulCompatMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
