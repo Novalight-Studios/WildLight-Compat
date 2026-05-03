@@ -14,6 +14,17 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
+
+            - name: Download local lib JARs
+              run: |
+                    mkdir -p libs
+                    curl -L -o libs/physics-mod-3.0.24-mc-1.21.1-fabric.jar \
+                        "https://cdn.modrinth.com/data/Xy8aRQKS/versions/R3aluipj/physics-mod-3.0.24-mc-1.21.1-fabric.jar"
+                    curl -L -o libs/resourcefullib-fabric-1.21-3.0.12.jar \
+                        "https://cdn.modrinth.com/data/G1hIVOrD/versions/Hf91FuVF/resourcefullib-fabric-1.21-3.0.12.jar"
+                    curl -L -o libs/yet_another_config_lib_v3-3.6.5+1.21.1-fabric.jar \
+                        "https://cdn.modrinth.com/data/1eAoo2KR/versions/BMVCssHI/yet_another_config_lib_v3-3.6.5%2B1.21.1-fabric.jar"
+
             - name: Validate Gradle wrapper
               uses: gradle/actions/wrapper-validation@v4
             - name: Setup JDK
