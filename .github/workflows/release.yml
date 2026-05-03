@@ -42,6 +42,10 @@ jobs:
                   name: Artifacts
                   path: build/libs/
 
+            - name: Extract version without v prefix
+              id: version
+              run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_OUTPUT
+
             - name: Create draft release and upload assets
               uses: softprops/action-gh-release@v2
               with:
@@ -51,8 +55,8 @@ jobs:
                   prerelease: false
                   body: "-"
                   files: |
-                      build/libs/wildlight-${{ github.ref_name }}.jar
-                      build/libs/wildlight-${{ github.ref_name }}-javadoc.jar
-                      build/libs/wildlight-${{ github.ref_name }}-sources.jar
+                      build/libs/wildlight-${{ steps.version.outputs.VERSION }}.jar
+                      build/libs/wildlight-${{ steps.version.outputs.VERSION }}-javadoc.jar
+                      build/libs/wildlight-${{ steps.version.outputs.VERSION }}-sources.jar
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
