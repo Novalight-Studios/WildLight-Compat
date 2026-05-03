@@ -50,7 +50,7 @@ jobs:
               uses: softprops/action-gh-release@v2
               with:
                   tag_name: ${{ github.ref_name }}
-                  name: LT x EC ${{ github.ref_name }}
+                  name: WildLight Compat ${{ github.ref_name }}
                   draft: true
                   prerelease: false
                   body: "-"
