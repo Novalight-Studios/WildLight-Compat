@@ -30,8 +30,6 @@
     "fabric-api": "*"
   },
   "suggests": {
-    "deeperdarker": "*",
-    "friendsandfoes": "*",
     "detailab-compat": "*",
     "detail-armor-bar": "*"
   }

@@ -4,9 +4,6 @@
   "plugin": "com.alfakynz.wildlight.mixin.WildlightMixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "BreezeCompatMixin",
-    "DeeperDarkerCompatMixin",
-    "FriendsFoesCompatMixin",
     "VisualOverhaulCompatMixin"
   ],
   "injectors": {
