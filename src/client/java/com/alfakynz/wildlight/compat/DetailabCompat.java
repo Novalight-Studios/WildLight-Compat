@@ -12,34 +12,38 @@ public class DetailabCompat implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        if (FabricLoader.getInstance().isModLoaded("detailab_compat") && FabricLoader.getInstance().isModLoaded("immersive_armors")) {
-            addImmersiveArmorsCompat();
+        if (FabricLoader.getInstance().isModLoaded("detailab_compat")) {
+            Map<ResourceLocation, CompatInfo> map = DetailArmorBarCompatCommon.MOD_COMPATS;
+
+            if (FabricLoader.getInstance().isModLoaded("immersive_armors")) {
+                String mod = "immersive_armors";
+                addSet(map, "bone", mod);
+                addSet(map, "divine", mod);
+                addSet(map, "heavy", mod);
+                addSet(map, "prismarine", mod);
+                addSet(map, "robe", mod);
+                addSet(map, "slime", mod);
+                addSet(map, "steampunk", mod);
+                addSet(map, "warrior", mod);
+                addSet(map, "wither", mod);
+                addSet(map, "wooden", mod);
+            }
+
+            if (FabricLoader.getInstance().isModLoaded("copperagebackport")) {
+                String mod = "minecraft"; // Registered at Minecraft in the mod to allow migrating to recent version
+                addSet(map, "copper", mod);
+            }
         }
     }
 
-    private void addImmersiveArmorsCompat() {
-        Map<ResourceLocation, CompatInfo> map = DetailArmorBarCompatCommon.MOD_COMPATS;
-
-        addSet(map, "bone");
-        addSet(map, "divine");
-        addSet(map, "heavy");
-        addSet(map, "prismarine");
-        addSet(map, "robe");
-        addSet(map, "slime");
-        addSet(map, "steampunk");
-        addSet(map, "warrior");
-        addSet(map, "wither");
-        addSet(map, "wooden");
-    }
-
-    private void addSet(Map<ResourceLocation, CompatInfo> map, String set) {
+    private void addSet(Map<ResourceLocation, CompatInfo> map, String set, String mod) {
         for (String part : DetailArmorBarCompatCommon.CompatBuilder.EQUIPMENT_TYPES) {
             ResourceLocation tex = ResourceLocation.fromNamespaceAndPath(
                     "detailab_compat",
-                    "textures/gui/sprites/hud/immersive_armors/" + set + ".png"
+                    "textures/gui/sprites/hud/" + mod + "/" + set + ".png"
             );
             ResourceLocation id = ResourceLocation.fromNamespaceAndPath(
-                    "immersive_armors",
+                    mod,
                     set + "_" + part
             );
 

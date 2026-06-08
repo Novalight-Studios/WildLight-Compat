@@ -39,6 +39,10 @@ dependencies {
     modCompileOnly "maven.modrinth:immersive-armors:${project.immersive_armors_version}"
     modRuntimeOnly "maven.modrinth:immersive-armors:${project.immersive_armors_version}"
 
+	// Copper Age Backport
+	modCompileOnly "maven.modrinth:backport-copper-age:${project.copper_age_backport_version}"
+	modRuntimeOnly "maven.modrinth:backport-copper-age:${project.copper_age_backport_version}"
+
     // Detail Armor Bar Compat
     modImplementation "maven.modrinth:detailab-compat:${project.detailab_compat_version}"
     modImplementation "maven.modrinth:detail-armor-bar:${project.detailab_version}"
