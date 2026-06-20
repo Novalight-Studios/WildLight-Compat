@@ -5,7 +5,7 @@ This mod is designed to fix some bugs and interface elements in the WildLight mo
 [![Modrinth](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_64h.png)](https://modrinth.com/project/6QzexKXD)
 [![CurseForge](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_64h.png)](https://www.curseforge.com/minecraft/modpacks/wildlight)
 
-## ✨ Features:
+## ✨ Features
 
 ### Mod
 
