@@ -1,0 +1,14 @@
+{
+  "states": [
+    {
+      "name": "minecraft:copper_wall_torch"
+    }
+  ],
+  "options": {
+    "preset": "wall_torch",
+    "color": {
+      "type": "subtle_effects:preset",
+      "preset": "copper_sparks"
+    }
+  }
+}

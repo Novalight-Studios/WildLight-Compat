@@ -20,6 +20,14 @@ public class WildlightMixinPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
+        if (mixinClassName.endsWith("CopperTorchMixin")) {
+            return FabricLoader.getInstance().isModLoaded("subtle_effects") && FabricLoader.getInstance().isModLoaded("copperagebackport");
+        }
+
+        if (mixinClassName.endsWith("SoulCandleMixin") || mixinClassName.endsWith("SoulFlintAndSteelItemMixin")) {
+            return FabricLoader.getInstance().isModLoaded("subtle_effects") && FabricLoader.getInstance().isModLoaded("soulcandles");
+        }
+
         if (mixinClassName.endsWith("VisualOverhaulCompatMixin")) {
             return FabricLoader.getInstance().isModLoaded("visualoverhaul");
         }

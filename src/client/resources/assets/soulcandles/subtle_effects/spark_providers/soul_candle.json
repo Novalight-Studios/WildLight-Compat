@@ -1,0 +1,28 @@
+{
+  "states": [
+    { "name": "soulcandles:soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:white_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:orange_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:magenta_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:light_blue_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:yellow_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:lime_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:pink_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:gray_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:light_gray_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:cyan_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:purple_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:blue_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:brown_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:green_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:red_soul_candle", "properties": { "lit": "true" } },
+    { "name": "soulcandles:black_soul_candle", "properties": { "lit": "true" } }
+  ],
+  "options": {
+    "preset": "candle",
+    "color": {
+      "type": "subtle_effects:preset",
+      "preset": "soul_sparks"
+    }
+  }
+}

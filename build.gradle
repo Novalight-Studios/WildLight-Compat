@@ -15,6 +15,7 @@ repositories {
 	maven { url "https://maven.ladysnake.org/releases" }
 	maven { url "https://maven.terraformersmc.com/" }
 	maven { url "https://repo.u-team.info" }
+	maven { url "https://maven.fzzyhmstrs.me" }
     mavenCentral()
 }
 
@@ -42,6 +43,13 @@ dependencies {
 	// Copper Age Backport
 	modCompileOnly "maven.modrinth:backport-copper-age:${project.copper_age_backport_version}"
 	modRuntimeOnly "maven.modrinth:backport-copper-age:${project.copper_age_backport_version}"
+
+	// Subtle Effects
+	modImplementation "maven.modrinth:subtle-effects:${project.subtle_effects_version}"
+	modImplementation "me.fzzyhmstrs:fzzy_config:${project.fzzy_config_version}"
+
+	// Soul Candles
+	modImplementation "maven.modrinth:soul-candles:${project.soul_candles_version}"
 
     // Detail Armor Bar Compat
     modImplementation "maven.modrinth:detailab-compat:${project.detailab_compat_version}"

@@ -4,6 +4,9 @@
   "plugin": "com.alfakynz.wildlight.mixin.WildlightMixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "CopperTorchMixin",
+    "SoulFlintAndSteelItemMixin",
+    "SoulCandlesMixin",
     "VisualOverhaulCompatMixin"
   ],
   "injectors": {

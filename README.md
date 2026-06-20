@@ -12,6 +12,8 @@ This mod is designed to fix some bugs and interface elements in the WildLight mo
 - Adds compatibility between Immersive Armors and Detail Armor Bar Compat (awaiting the [pull request](https://github.com/Raik176/detail-armor-bar-compat/pull/19) to be merged)
 - Adds compatibility between Copper Age Backport and Detail Armor Bar Compat
 - Adds compatibility between Visual Overhaul and all modded woods (awaiting the [pull request](https://github.com/TeamMidnightDust/VisualOverhaul/pull/99))
+- Adds compatibility between Subtle Effects and Copper Age Backport
+- Adds compatibility between Subtle Effects and Soul Candles
 - Allows you to close the backpack screen with the backpack keybind (V by default)
 
 ### Built-in resource pack
