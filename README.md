@@ -34,6 +34,7 @@ This mod is designed to fix some bugs and interface elements in the WildLight mo
 - Adds icon for Options Profiles
 - Adds icon for Sodium (leaves)
 - Adds icon for Sounds
+- Fixes a bug with chains on Better Lights resource pack
 - Most of the icons added now work in English, Spanish, and French
 
 ## 🙏 Credits
