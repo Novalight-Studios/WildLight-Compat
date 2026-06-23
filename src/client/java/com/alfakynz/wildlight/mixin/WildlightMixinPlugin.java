@@ -24,6 +24,10 @@ public class WildlightMixinPlugin implements IMixinConfigPlugin {
             return FabricLoader.getInstance().isModLoaded("subtle_effects") && FabricLoader.getInstance().isModLoaded("copperagebackport");
         }
 
+        if (mixinClassName.endsWith("SludgeMixin")) {
+            return FabricLoader.getInstance().isModLoaded("subtle_effects") && FabricLoader.getInstance().isModLoaded("deeperdarker");
+        }
+
         if (mixinClassName.endsWith("SoulCandleMixin") || mixinClassName.endsWith("SoulFlintAndSteelItemMixin")) {
             return FabricLoader.getInstance().isModLoaded("subtle_effects") && FabricLoader.getInstance().isModLoaded("soulcandles");
         }

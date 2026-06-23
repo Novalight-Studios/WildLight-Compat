@@ -18,6 +18,9 @@
       "com.alfakynz.wildlight.WildLightClient",
       "com.alfakynz.wildlight.compat.UsefulBackpacks",
       "com.alfakynz.wildlight.compat.DetailabCompat"
+    ],
+    "main": [
+      "com.alfakynz.wildlight.WildLight"
     ]
   },
   "mixins": [

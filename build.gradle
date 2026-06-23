@@ -16,6 +16,8 @@ repositories {
 	maven { url "https://maven.terraformersmc.com/" }
 	maven { url "https://repo.u-team.info" }
 	maven { url "https://maven.fzzyhmstrs.me" }
+	maven { url "https://maven.kyrptonaught.dev" }
+	maven { url "https://maven.wispforest.io" }
     mavenCentral()
 }
 
@@ -43,6 +45,11 @@ dependencies {
 	// Copper Age Backport
 	modCompileOnly "maven.modrinth:backport-copper-age:${project.copper_age_backport_version}"
 	modRuntimeOnly "maven.modrinth:backport-copper-age:${project.copper_age_backport_version}"
+
+	// Deeper and Darker
+	modImplementation "maven.modrinth:deeperdarker:${project.deeper_darker_version}"
+	include modImplementation("net.kyrptonaught:customportalapi:${project.custom_portal_api_version}")
+	modImplementation "io.wispforest:owo-lib:${project.owo_version}"
 
 	// Subtle Effects
 	modImplementation "maven.modrinth:subtle-effects:${project.subtle_effects_version}"
