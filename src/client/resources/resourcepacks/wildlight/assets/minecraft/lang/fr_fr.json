@@ -1,4 +1,12 @@
 {
+  "entity.minecraft.camel": "Dromadaire",
+  "entity.minecraft.donkey": "Âne",
+  "entity.minecraft.horse": "Cheval",
+  "entity.minecraft.llama": "Llama",
+  "entity.minecraft.mule": "Mule",
+  "entity.minecraft.skeleton_horse": "Cheval-squelette",
+  "entity.minecraft.trader_llama": "Lama de marchand",
+  "entity.minecraft.zombie_horse": "Cheval-zombie",
   "menu.game": "\uDBF0\uDC13",
   "music.game.below_and_above": "Amos Roddy - Below and Above",
   "music.game.broken_clocks": "Amos Roddy - Broken Clocks",
