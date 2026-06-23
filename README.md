@@ -37,6 +37,7 @@ This mod is designed to fix some bugs and interface elements in the WildLight mo
 - Adds icon for Sounds
 - Fixes a bug with chains on Better Lights resource pack
 - Fixes some animals not having a name in Jade
+- Fixes painting icon for Dennis variant
 - Most of the icons added now work in English, Spanish, and French
 
 ## 🙏 Credits
