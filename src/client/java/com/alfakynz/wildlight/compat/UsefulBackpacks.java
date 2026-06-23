@@ -1,9 +1,9 @@
 package com.alfakynz.wildlight.compat;
 
 import com.alfakynz.wildlight.WildLightClient;
+import com.alfakynz.wildlight.util.ModUtils;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.gui.screens.Screen;
@@ -19,7 +19,7 @@ public class UsefulBackpacks implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        if (FabricLoader.getInstance().isModLoaded("usefulbackpacks") && FabricLoader.getInstance().isModLoaded("trinkets")) {
+        if (ModUtils.areModsLoaded("usefulbackpacks", "trinkets")) {
             setupBackpackKeys();
         }
     }

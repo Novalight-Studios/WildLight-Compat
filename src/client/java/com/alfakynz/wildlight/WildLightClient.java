@@ -1,6 +1,7 @@
 package com.alfakynz.wildlight;
 
 import com.alfakynz.wildlight.init.WildLightParticles;
+import com.alfakynz.wildlight.util.ModUtils;
 import einstein.subtle_effects.particle.SlimeTrailParticle;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
@@ -27,7 +28,7 @@ public class WildLightClient implements ClientModInitializer {
                 ResourcePackActivationType.DEFAULT_ENABLED
         );
 
-        if (FabricLoader.getInstance().isModLoaded("subtle_effects") && FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+        if (ModUtils.areModsLoaded("subtle_effects", "deeperdarker")) {
             ParticleFactoryRegistry.getInstance().register(
                     WildLightParticles.SLUDGE_TRAIL,
                     SlimeTrailParticle.Provider::new

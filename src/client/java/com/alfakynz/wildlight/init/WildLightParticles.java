@@ -2,7 +2,6 @@ package com.alfakynz.wildlight.init;
 
 import com.mojang.serialization.MapCodec;
 import einstein.subtle_effects.particle.option.FloatParticleOptions;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.Registry;
 import net.minecraft.core.particles.ParticleType;
 import net.minecraft.network.RegistryFriendlyByteBuf;

@@ -1,8 +1,8 @@
 package com.alfakynz.wildlight;
 
 import com.alfakynz.wildlight.init.WildLightParticles;
+import com.alfakynz.wildlight.util.ModUtils;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +13,7 @@ public class WildLight implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        if (FabricLoader.getInstance().isModLoaded("subtle_effects") && FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+        if (ModUtils.areModsLoaded("subtle_effects", "deeperdarker")) {
             WildLightParticles.init();
         }
 

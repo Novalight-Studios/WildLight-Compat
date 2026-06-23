@@ -1,6 +1,6 @@
 package com.alfakynz.wildlight.mixin;
 
-import net.fabricmc.loader.api.FabricLoader;
+import com.alfakynz.wildlight.util.ModUtils;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -21,19 +21,19 @@ public class WildlightMixinPlugin implements IMixinConfigPlugin {
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
         if (mixinClassName.endsWith("CopperTorchMixin")) {
-            return FabricLoader.getInstance().isModLoaded("subtle_effects") && FabricLoader.getInstance().isModLoaded("copperagebackport");
+            return ModUtils.areModsLoaded("subtle_effects", "copperagebackport");
         }
 
         if (mixinClassName.endsWith("SludgeMixin")) {
-            return FabricLoader.getInstance().isModLoaded("subtle_effects") && FabricLoader.getInstance().isModLoaded("deeperdarker");
+            return ModUtils.areModsLoaded("subtle_effects", "deeperdarker");
         }
 
         if (mixinClassName.endsWith("SoulCandleMixin") || mixinClassName.endsWith("SoulFlintAndSteelItemMixin")) {
-            return FabricLoader.getInstance().isModLoaded("subtle_effects") && FabricLoader.getInstance().isModLoaded("soulcandles");
+            return ModUtils.areModsLoaded("subtle_effects", "soulcandles");
         }
 
         if (mixinClassName.endsWith("VisualOverhaulCompatMixin")) {
-            return FabricLoader.getInstance().isModLoaded("visualoverhaul");
+            return ModUtils.areModsLoaded("visualoverhaul");
         }
 
         return true;

@@ -1,7 +1,7 @@
 package com.alfakynz.wildlight.compat;
 
+import com.alfakynz.wildlight.util.ModUtils;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.resources.ResourceLocation;
 import org.rhm.detailab_compat.DetailArmorBarCompatCommon;
 import org.rhm.detailab_compat.DetailArmorBarCompatCommon.CompatInfo;
@@ -12,10 +12,10 @@ public class DetailabCompat implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        if (FabricLoader.getInstance().isModLoaded("detailab_compat")) {
+        if (ModUtils.areModsLoaded("detailab_compat")) {
             Map<ResourceLocation, CompatInfo> map = DetailArmorBarCompatCommon.MOD_COMPATS;
 
-            if (FabricLoader.getInstance().isModLoaded("immersive_armors")) {
+            if (ModUtils.areModsLoaded("immersive_armors")) {
                 String mod = "immersive_armors";
                 addSet(map, "bone", mod);
                 addSet(map, "divine", mod);
@@ -29,7 +29,7 @@ public class DetailabCompat implements ClientModInitializer {
                 addSet(map, "wooden", mod);
             }
 
-            if (FabricLoader.getInstance().isModLoaded("copperagebackport")) {
+            if (ModUtils.areModsLoaded("copperagebackport")) {
                 String mod = "minecraft"; // Registered at Minecraft in the mod to allow migrating to recent version
                 addSet(map, "copper", mod);
             }
