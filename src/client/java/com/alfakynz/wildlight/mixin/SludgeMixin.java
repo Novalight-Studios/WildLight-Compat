@@ -31,7 +31,7 @@ public abstract class SludgeMixin extends Mob {
     @Inject(method = "tick", at = @At("TAIL"))
     private void subtleEffects$trail(CallbackInfo ci) {
 
-        if (!ModConfigs.ENTITIES.replaceSlimeSquishParticles && !((Object) this instanceof Sludge)) {
+        if (!ModConfigs.ENTITIES.replaceSlimeSquishParticles || !((Object) this instanceof Sludge)) {
             return;
         }
 
