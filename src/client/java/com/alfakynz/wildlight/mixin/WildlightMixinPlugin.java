@@ -20,6 +20,9 @@ public class WildlightMixinPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
+        if (mixinClassName.endsWith("CancelEndFlashClientLevelMixin") || mixinClassName.endsWith("CancelEndFlashLevelRendererMixin") || mixinClassName.endsWith("CancelEndFlashLightTextureMixin")) {
+            return ModUtils.areModsLoaded("copperagebackport");
+        }
         if (mixinClassName.endsWith("CopperTorchMixin")) {
             return ModUtils.areModsLoaded("subtle_effects", "copperagebackport");
         }
