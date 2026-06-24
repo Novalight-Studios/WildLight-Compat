@@ -4,10 +4,13 @@
   "plugin": "com.alfakynz.wildlight.mixin.WildlightMixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "accessor.BossBarsOverlayAccessor",
+    "BossBarsOverlayMixin",
     "CancelEndFlashClientLevelMixin",
     "CancelEndFlashLevelRendererMixin",
     "CancelEndFlashLightTextureMixin",
     "CopperTorchMixin",
+    "JadeBossBarsMixin",
     "SludgeMixin",
     "SoulCandlesMixin",
     "SoulFlintAndSteelItemMixin",

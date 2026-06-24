@@ -15,6 +15,8 @@ This mod is designed to fix some bugs and interface elements in the WildLight mo
 - Adds compatibility between Subtle Effects and Copper Age Backport (particles on lights)
 - Adds compatibility between Subtle Effects and Deeper & Darker (Sludge trail particles)
 - Adds compatibility between Subtle Effects and Soul Candles (particles on candles)
+- Adds compatibility between Jade and Enhanced Boss Bars (tooltips behind the boss bar)
+- Fixes Enhanced Boss Bars with multiple bosses (adds more spaces between the boss bars)
 - Removes the End Flashes backported by Copper Age Backport
 - Allows you to close the backpack screen with the backpack keybind (V by default)
 

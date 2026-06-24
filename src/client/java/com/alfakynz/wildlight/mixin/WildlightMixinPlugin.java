@@ -23,8 +23,13 @@ public class WildlightMixinPlugin implements IMixinConfigPlugin {
         if (mixinClassName.endsWith("CancelEndFlashClientLevelMixin") || mixinClassName.endsWith("CancelEndFlashLevelRendererMixin") || mixinClassName.endsWith("CancelEndFlashLightTextureMixin")) {
             return ModUtils.areModsLoaded("copperagebackport");
         }
+
         if (mixinClassName.endsWith("CopperTorchMixin")) {
             return ModUtils.areModsLoaded("subtle_effects", "copperagebackport");
+        }
+
+        if (mixinClassName.endsWith("JadeBossBarMixin")) {
+            return ModUtils.areModsLoaded("jade");
         }
 
         if (mixinClassName.endsWith("SludgeMixin")) {

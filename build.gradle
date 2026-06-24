@@ -70,6 +70,9 @@ dependencies {
 	modImplementation "info.u-team:useful_backpacks-fabric-${project.minecraft_version}:${project.usefulbackpacks_version}"
 	modImplementation "info.u-team:u_team_core-fabric-${project.minecraft_version}:${project.uteamcore_version}"
 	modImplementation "dev.emi:trinkets:${project.trinkets_version}"
+
+	// Jade
+	modImplementation "maven.modrinth:jade:${project.jade_version}"
 }
 
 processClientResources {
