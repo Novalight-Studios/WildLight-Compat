@@ -4,17 +4,17 @@
   "plugin": "com.alfakynz.wildlight.mixin.WildlightMixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "accessor.BossBarsOverlayAccessor",
     "BossBarsOverlayMixin",
-    "CancelEndFlashClientLevelMixin",
-    "CancelEndFlashLevelRendererMixin",
-    "CancelEndFlashLightTextureMixin",
-    "CopperTorchMixin",
-    "JadeBossBarsMixin",
-    "SludgeMixin",
-    "SoulCandlesMixin",
-    "SoulFlintAndSteelItemMixin",
-    "VisualOverhaulCompatMixin"
+    "copperagebackport.CancelEndFlashClientLevelMixin",
+    "copperagebackport.CancelEndFlashLevelRendererMixin",
+    "copperagebackport.CancelEndFlashLightTextureMixin",
+    "subtle_effects.CopperTorchMixin",
+    "jade.JadeBossBarsMixin",
+    "subtle_effects.SludgeMixin",
+    "subtle_effects.SoulCandlesMixin",
+    "subtle_effects.SoulFlintAndSteelItemMixin",
+    "visualoverhaul.VisualOverhaulCompatMixin",
+    "accessor.BossBarsOverlayAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

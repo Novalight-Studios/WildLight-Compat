@@ -1,4 +1,4 @@
-package com.alfakynz.wildlight.mixin;
+package com.alfakynz.wildlight.mixin.subtle_effects;
 
 import einstein.subtle_effects.particle.SparkParticle;
 import einstein.subtle_effects.util.SparkType;

@@ -1,4 +1,4 @@
-package com.alfakynz.wildlight.mixin;
+package com.alfakynz.wildlight.mixin.subtle_effects;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;

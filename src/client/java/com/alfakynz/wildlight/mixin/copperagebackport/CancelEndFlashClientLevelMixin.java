@@ -1,4 +1,4 @@
-package com.alfakynz.wildlight.mixin;
+package com.alfakynz.wildlight.mixin.copperagebackport;
 
 import com.github.smallinger.copperagebackport.client.endflash.EndFlashAccessor;
 import com.github.smallinger.copperagebackport.client.endflash.EndFlashState;

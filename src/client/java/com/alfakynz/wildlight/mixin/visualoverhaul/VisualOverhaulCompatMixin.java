@@ -1,4 +1,4 @@
-package com.alfakynz.wildlight.mixin;
+package com.alfakynz.wildlight.mixin.visualoverhaul;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;

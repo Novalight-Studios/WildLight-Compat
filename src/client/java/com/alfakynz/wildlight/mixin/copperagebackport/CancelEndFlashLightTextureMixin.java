@@ -1,4 +1,4 @@
-package com.alfakynz.wildlight.mixin;
+package com.alfakynz.wildlight.mixin.copperagebackport;
 
 import net.minecraft.client.renderer.LightTexture;
 import org.spongepowered.asm.mixin.Mixin;

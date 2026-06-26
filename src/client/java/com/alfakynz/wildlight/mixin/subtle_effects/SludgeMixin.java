@@ -1,4 +1,4 @@
-package com.alfakynz.wildlight.mixin;
+package com.alfakynz.wildlight.mixin.subtle_effects;
 
 import com.alfakynz.wildlight.init.WildLightParticles;
 import com.kyanite.deeperdarker.content.entities.Sludge;

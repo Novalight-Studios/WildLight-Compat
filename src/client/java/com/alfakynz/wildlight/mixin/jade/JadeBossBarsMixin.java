@@ -1,4 +1,4 @@
-package com.alfakynz.wildlight.mixin;
+package com.alfakynz.wildlight.mixin.jade;
 
 import com.alfakynz.wildlight.mixin.accessor.BossBarsOverlayAccessor;
 import com.alfakynz.wildlight.util.ModUtils;
