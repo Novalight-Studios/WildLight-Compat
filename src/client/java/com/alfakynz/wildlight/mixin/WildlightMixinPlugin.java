@@ -28,6 +28,10 @@ public class WildlightMixinPlugin implements IMixinConfigPlugin {
             return ModUtils.areModsLoaded("subtle_effects", "copperagebackport");
         }
 
+        if (mixinClassName.endsWith("FBPTerrainParticleMixin")) {
+            return ModUtils.areModsLoaded("fbp");
+        }
+
         if (mixinClassName.endsWith("JadeBossBarMixin")) {
             return ModUtils.areModsLoaded("jade");
         }

@@ -5,16 +5,17 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "BossBarsOverlayMixin",
+    "accessor.BossBarsOverlayAccessor",
     "copperagebackport.CancelEndFlashClientLevelMixin",
     "copperagebackport.CancelEndFlashLevelRendererMixin",
     "copperagebackport.CancelEndFlashLightTextureMixin",
-    "subtle_effects.CopperTorchMixin",
+    "fbp.FBPTerrainParticleMixin",
     "jade.JadeBossBarsMixin",
+    "subtle_effects.CopperTorchMixin",
     "subtle_effects.SludgeMixin",
     "subtle_effects.SoulCandlesMixin",
     "subtle_effects.SoulFlintAndSteelItemMixin",
-    "visualoverhaul.VisualOverhaulCompatMixin",
-    "accessor.BossBarsOverlayAccessor"
+    "visualoverhaul.VisualOverhaulCompatMixin"
   ],
   "injectors": {
     "defaultRequire": 1

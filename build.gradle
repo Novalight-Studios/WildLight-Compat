@@ -73,6 +73,9 @@ dependencies {
 
 	// Jade
 	modImplementation "maven.modrinth:jade:${project.jade_version}"
+
+	// Fancy Block Particles
+	modImplementation "maven.modrinth:fbp-renewed:${project.fbp_version}"
 }
 
 processClientResources {
