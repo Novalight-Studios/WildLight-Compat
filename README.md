@@ -30,6 +30,7 @@ This mod is designed to fix some bugs and interface elements in the WildLight mo
 - Adds compat for ETF button
 - Adds compat for ModMenu button
 - Adds compat for Not Interested!
+- Adds compat for Polymorph
 - Adds compat for Useful Backpacks
 - Adds compat for Vanilla Backports music names
 - Adds compat for Wilder Wild (removes chest names)
